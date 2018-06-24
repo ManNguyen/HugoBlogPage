@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/skills-styles.css" />
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				{{ partial "header.html" . }}
+				<!-- Banner -->
+				<section>
+					<h1>Hello!</h1>
+					<div class="row">						
+						<div class="6u 12u$(small)">
+								{{.Content}}
+						</div>
+						<div class="6u$ 12u$(small)">
+							<header class="major">
+								<h2 style="margin: 0 0 0.25em 0;">My Posts</h2>
+							</header>
+							<ul style="list-style: none;padding-left: 0em;">
+									<!-- Ranges through content/post/*.md -->
+									{{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+									{{ range $paginator.Pages }}
+									<li style="margin-bottom: 1em;">
+										<div >
+											<h3 style="margin: 0em;">
+												<a href="{{ .Permalink }}">{{ .Title }}</a>
+											</h3>
+											<time class="li-article-date">{{ .Date.Format "January, 2, 2006" }}</time>
+											<p style="    margin: 0 0 0em 0;">{{.Summary}} </p>
+										</div>
+										{{ if .Truncated }}
+										<!-- This <div> includes a read more link, but only if the summary is truncated... -->
+										<div>
+										  <a href="{{ .RelPermalink }}">Read More…</a>
+										</div>
+										{{ end }}
+									</li>
+									{{ end }}
+									<!-- Hugo's default pagination template. -->
+									{{ template "_internal/pagination.html" . }}
+
+								</ul>
+						</div>
+					</div>
+
+				</section>
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2 >Skills</h2>
+					</header>
+					<div class="features" style="display: contents;">
+						<div class="row">
+							<div class="6u 12u$(small)">
+								<h2>Front End</h3>
+									<div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 5%;">
+												<div id="Skill-AngularJS" class="Skill-Expert">
+													<span class="Skill-Area">AngularJS</span>
+													<span class="PercentText pull-right fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 20%;">
+												<div id="Skill-Bootstrap" class="Skill-Expert">
+													<span class="Skill-Area ">Bootstrap</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 5%;">
+												<div id="Skill-jQuery" class="Skill-Expert">
+													<span class="Skill-Area ">jQuery</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 15%;">
+												<div id="Skill-HTML" class="Skill-Expert">
+													<span class="Skill-Area">HTML5</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 15%;">
+												<div id="Skill-CSS" class="Skill-Expert">
+													<span class="Skill-Area ">CSS/CSS3</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 10%;">
+												<div id="Skill-JS" class="Skill-Expert">
+													<span class="Skill-Area">Javascript</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+							<div class="6u$ 12u$(small)">
+								<h2>Back End</h3>
+									<div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 20%;">
+												<div id="Skill-ASPNet" class="Skill-Expert">
+													<span class="Skill-Area">ASP.Net</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 10%;">
+												<div id="Skill-CSharp" class="Skill-Expert">
+													<span class="Skill-Area">C#</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 15%;">
+												<div id="Skill-SQL" class="Skill-Expert">
+													<span class="Skill-Area">T-SQL</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 40%;">
+												<div id="Skill-NodeJS" class="Skill-Expert">
+													<span class="Skill-Area">Node.JS</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 40%;">
+												<div id="Skill-Express" class="Skill-Expert">
+													<span class="Skill-Area">Express.JS</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+										<div class="SkillBar">
+											<div style="position: absolute; left: 0; right: 40%;">
+												<div id="Skill-MongoDB" class="Skill-Expert">
+													<span class="Skill-Area">MongoDB</span>
+													<span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent"></span>
+												</div>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Projects</h2>
+					</header>
+					<div class="posts">
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic01.jpg" alt="" />
+							</a>
+							<h3>Snapshots</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic02.jpg" alt="" />
+							</a>
+							<h3>DMA - Maptitude</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic03.jpg" alt="" />
+							</a>
+							<h3>Tempus ullamcorper</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic04.jpg" alt="" />
+							</a>
+							<h3>Sed etiam facilis</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic05.jpg" alt="" />
+							</a>
+							<h3>Feugiat lorem aenean</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+						<article>
+							<a href="#" class="image">
+								<img src="images/pic06.jpg" alt="" />
+							</a>
+							<h3>Amet varius aliquam</h3>
+							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla
+								amet lorem feugiat tempus aliquam.</p>
+							<ul class="actions">
+								<li>
+									<a href="#" class="button">More</a>
+								</li>
+							</ul>
+						</article>
+					</div>
+				</section>
+
+			</div>
+		</div>
+		{{ partial "sidebar.html" . }}
+	</div>
+	{{ partial "scripts.html" . }}
+
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+{{ partial "head.html" . }}
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				{{ partial "header.html" . }}
+				<!-- Banner -->
+				<section>
+					<div class="content">
+						<header>
+							<h2>{{.Title}}</h1>
+						</header>
+						<!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+
+						<ul style="list-style: none;padding-left: 0em;">
+							<!-- Ranges through content/post/*.md -->
+							{{ range .Data.Pages }}
+							<li style="margin-bottom: 1em;">
+								<div >
+									<h3 style="margin: 0em;">
+										<a href="{{ .Permalink }}">{{ .Title }}</a>
+									</h3>
+									<time class="li-article-date">{{ .Date.Format "January, 2, 2006" }}</time>
+									<p style="    margin: 0 0 0em 0;">{{.Summary}} </p>
+								</div>
+								{{ if .Truncated }}
+								<!-- This <div> includes a read more link, but only if the summary is truncated... -->
+								<div>
+								  <a href="{{ .RelPermalink }}">Read More…</a>
+								</div>
+								{{ end }}
+							</li>
+							{{ end }}
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+		{{ partial "sidebar.html" . }}
+	</div>
+	{{ partial "scripts.html" . }}
+</body>
+</html>
