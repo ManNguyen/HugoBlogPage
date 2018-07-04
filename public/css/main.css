@@ -17,6 +17,7 @@
 		vertical-align: baseline;
 	}
 
+	
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -56,7 +57,11 @@
 	}
 
 /* Grid */
-
+	.post-contain{
+		max-width: 1024px;
+		margin: auto;
+		text-align: justify
+	}
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
