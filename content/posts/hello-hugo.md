@@ -13,9 +13,13 @@ Last year, I made a website for the sole purpose of getting to employer's eyes a
 My techs: 
 
 Hugo to generate statics site,
+
 A beautiful theme got from HTML5up website ( it's free to use)
+
 Host it using github pages.
+
 Using Hubot to automate build/deploy process.
+
 cost to operate: 
 domain name :  $
 Linode : $ /month
