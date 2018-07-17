@@ -5,7 +5,7 @@ description = "MM - Hello Hugo"
 date = "2018-05-10"
 +++
 
-<img src="images/flying-turtle.png" width =100% alt="" />
+<img src="/images/flying-turtle.png" width =100% alt="" />
 Finally, I got myself a personal blog/website using Hugo Framework. It's been a little bit time consuming to set up, but oh boy isn't it look nice.
 I've always wanted to have a personal blog, but not until recently, I realized that I truly want to have a blog.
 
