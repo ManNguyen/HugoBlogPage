@@ -1,7 +1,7 @@
 +++
 type = "page"
 title = "Home"
-description = "Man Nguyen — Web developer"
+description = "Man Nguyen — Web Developer"
 +++
 
 <h2>Welcome to My blog</h2>
