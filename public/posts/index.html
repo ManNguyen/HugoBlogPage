@@ -5,8 +5,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     
-    <link rel="stylesheet" href="https://mannguyen.github.io//css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://mannguyen.github.io//css/font-awesome.min.css" />
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93998248-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-93998248-2');
+    </script>
+
+    <meta property="og:site_name" content="mmngn.com">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="MM - Posts">
+    <meta property="og:url" content="http://www.mmngn.com/">
+    <meta property="og:description" content="Man Nguyen's personal blog.">
+    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/7028401?s=400&amp;v=4">
+    
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://mannguyen.github.io//css/main.css" />
     <style>
         p:empty {display:none;}
@@ -14,6 +31,7 @@
     
     
 </head>
+
 <body>
 	
 	<div id="wrapper">
@@ -31,15 +49,49 @@
                             </ul>
                         </header>
 				
-				<section>
+				<section class="post-contain">
 					<div class="content">
 						<header>
-							<h2>My posts</h1>
+							<h2 style="margin: 0 0 0.5em 0;">My posts</h1>
 						</header>
 						
 
 						<ul style="list-style: none;padding-left: 0em;">
 							
+							
+							<li style="margin-bottom: 1em;">
+								<div >
+									<h3 style="margin: 0em;">
+										<a href="https://mannguyen.github.io/posts/levenshteindistance/">Levenshtein Distance</a>
+									</h3>
+									<time class="li-article-date">February, 6, 2019</time>
+									<p style="    margin: 0 0 0em 0;">In one of my project, I had to make a matching solution for customers in 2 different, unconnected tables. At the beginning, I did the string comparison on customer names, but the plan failed before it even started. People make mistake, and one typo will render the string comparison useless.
+The next best thing that I could think of (and actually implemented) is using Levenshtein Distanceto calculate the similarity and suggest the best match. </p>
+								</div>
+								
+								
+								<div>
+								  <a href="/posts/levenshteindistance/">Read More…</a>
+								</div>
+								
+							</li>
+							
+							<li style="margin-bottom: 1em;">
+								<div >
+									<h3 style="margin: 0em;">
+										<a href="https://mannguyen.github.io/posts/tobelazy/">To Become Lazy</a>
+									</h3>
+									<time class="li-article-date">June, 26, 2018</time>
+									<p style="    margin: 0 0 0em 0;">There was a story that Bill Gates personally prefer lazy people for important jobs at Microsoft because they can give brilliant solutions. As humorous as it is, there is a reliable lesson that we can learn from it.
+In any kind of work, &ldquo;make it a habit&rdquo; is one way to improve efficiency. It reduces the &ldquo;unnecessary&rdquo; thinking part that decelerates the decision making. It also increases the synchronization of body parts. </p>
+								</div>
+								
+								
+								<div>
+								  <a href="/posts/tobelazy/">Read More…</a>
+								</div>
+								
+							</li>
 							
 							<li style="margin-bottom: 1em;">
 								<div >
@@ -58,40 +110,13 @@
 										<a href="https://mannguyen.github.io/posts/hello-hugo/">Hello Hugo</a>
 									</h3>
 									<time class="li-article-date">May, 10, 2018</time>
-									<p style="    margin: 0 0 0em 0;">Finally, I got myself a personal blog/website using Hugo Framework. It&rsquo;s been a litle bit time consuming to setting up, but oh boy isn&rsquo;t it look nice. I&rsquo;ve always wanted to have a personal blog, but not until recently , I realized that I truly want to have a blog.
-Last year, I made a website for the sole purpose of getting to employer&rsquo;s eyes and it didn&rsquo;t get me far. </p>
+									<p style="    margin: 0 0 0em 0;">Finally, I got myself a personal blog/website using Hugo Framework. It&rsquo;s been a little bit time consuming to set up, but oh boy isn&rsquo;t it look nice. I&rsquo;ve always wanted to have a personal blog, but not until recently, I realized that I truly want to have a blog.
+Last year, I made a website for the sole purpose of getting to the employer&rsquo;s eyes and it didn&rsquo;t get me far. </p>
 								</div>
 								
 								
 								<div>
 								  <a href="/posts/hello-hugo/">Read More…</a>
-								</div>
-								
-							</li>
-							
-							<li style="margin-bottom: 1em;">
-								<div >
-									<h3 style="margin: 0em;">
-										<a href="https://mannguyen.github.io/posts/post1/">post1</a>
-									</h3>
-									<time class="li-article-date">January, 17, 2018</time>
-									<p style="    margin: 0 0 0em 0;">Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor. </p>
-								</div>
-								
-							</li>
-							
-							<li style="margin-bottom: 1em;">
-								<div >
-									<h3 style="margin: 0em;">
-										<a href="https://mannguyen.github.io/posts/post2/">post2</a>
-									</h3>
-									<time class="li-article-date">January, 17, 2015</time>
-									<p style="    margin: 0 0 0em 0;">Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. </p>
-								</div>
-								
-								
-								<div>
-								  <a href="/posts/post2/">Read More…</a>
 								</div>
 								
 							</li>
@@ -131,7 +156,7 @@ Last year, I made a website for the sole purpose of getting to employer&rsquo;s 
                                 <h2>Get in touch</h2>
                             </header>
                             <ul class="contact">
-                                <li class="fa-envelope-o"><a href="mannguyendeveloper@gmail.com">mannguyendeveloper@gmail.com</a></li>
+                                <li class="fa-envelope-o"><a href="man.ngn.io@gmail.com">man.ngn.io@gmail.com</a></li>
                             </ul>
                         </section>
 

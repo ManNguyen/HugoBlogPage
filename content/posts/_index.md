@@ -1,5 +1,5 @@
 +++
-type = "posts"
+type = "page"
 title = "My posts"
 description = "MM - Posts"
 menu = "main"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on My New Hugo Site</title>
@@ -6,10 +6,30 @@
     <description>Recent content in Home on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mannguyen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Levenshtein Distance</title>
+      <link>https://mannguyen.github.io/posts/levenshteindistance/</link>
+      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://mannguyen.github.io/posts/levenshteindistance/</guid>
+      <description>In one of my project, I had to make a matching solution for customers in 2 different, unconnected tables. At the beginning, I did the string comparison on customer names, but the plan failed before it even started. People make mistake, and one typo will render the string comparison useless.
+The next best thing that I could think of (and actually implemented) is using Levenshtein Distanceto calculate the similarity and suggest the best match.</description>
+    </item>
+    
+    <item>
+      <title>To Become Lazy</title>
+      <link>https://mannguyen.github.io/posts/tobelazy/</link>
+      <pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mannguyen.github.io/posts/tobelazy/</guid>
+      <description>There was a story that Bill Gates personally prefer lazy people for important jobs at Microsoft because they can give brilliant solutions. As humorous as it is, there is a reliable lesson that we can learn from it.
+In any kind of work, &amp;ldquo;make it a habit&amp;rdquo; is one way to improve efficiency. It reduces the &amp;ldquo;unnecessary&amp;rdquo; thinking part that decelerates the decision making. It also increases the synchronization of body parts.</description>
+    </item>
     
     <item>
       <title>Disciplines of Web Developing</title>
@@ -26,26 +46,8 @@
       <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://mannguyen.github.io/posts/hello-hugo/</guid>
-      <description>Finally, I got myself a personal blog/website using Hugo Framework. It&amp;rsquo;s been a litle bit time consuming to setting up, but oh boy isn&amp;rsquo;t it look nice. I&amp;rsquo;ve always wanted to have a personal blog, but not until recently , I realized that I truly want to have a blog.
-Last year, I made a website for the sole purpose of getting to employer&amp;rsquo;s eyes and it didn&amp;rsquo;t get me far.</description>
-    </item>
-    
-    <item>
-      <title>post1</title>
-      <link>https://mannguyen.github.io/posts/post1/</link>
-      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mannguyen.github.io/posts/post1/</guid>
-      <description>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Lorem ipsum dolor.</description>
-    </item>
-    
-    <item>
-      <title>post2</title>
-      <link>https://mannguyen.github.io/posts/post2/</link>
-      <pubDate>Sat, 17 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://mannguyen.github.io/posts/post2/</guid>
-      <description>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</description>
+      <description>Finally, I got myself a personal blog/website using Hugo Framework. It&amp;rsquo;s been a little bit time consuming to set up, but oh boy isn&amp;rsquo;t it look nice. I&amp;rsquo;ve always wanted to have a personal blog, but not until recently, I realized that I truly want to have a blog.
+Last year, I made a website for the sole purpose of getting to the employer&amp;rsquo;s eyes and it didn&amp;rsquo;t get me far.</description>
     </item>
     
     <item>
@@ -54,7 +56,7 @@ Last year, I made a website for the sole purpose of getting to employer&amp;rsqu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mannguyen.github.io/about/</guid>
-      <description>Hello world about me</description>
+      <description>This blog is for demonstrate auto deployment by Hubot</description>
     </item>
     
   </channel>
