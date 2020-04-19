@@ -283,3 +283,12 @@
 	});
 
 })(jQuery);
+
+
+(function(){
+	setTimeout(function(){
+		console.log("ready");
+		$('#sidebar').removeClass('inactive');
+
+	},100)
+})()
